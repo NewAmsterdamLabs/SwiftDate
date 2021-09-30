@@ -13,7 +13,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftDate"
+            name: "SwiftDate",
+            resources: [
+                .process("Sources/SwiftDate/SwiftDate.bundle")
+            ]
         )
     ]
 )
