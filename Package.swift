@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftDate",
+    defaultLocalization: "en",
     platforms: [.iOS(.v9)],
     products: [
         .library(
@@ -12,8 +13,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftDate",
-            path: "."
+            name: "SwiftDate"
         )
     ]
 )
